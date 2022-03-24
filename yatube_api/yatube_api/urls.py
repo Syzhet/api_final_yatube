@@ -11,3 +11,7 @@ urlpatterns = [
         name='redoc'
     ),
 ]
+
+urlpatterns += [
+    path('api-auth/', include('rest_framework.urls')),
+]
